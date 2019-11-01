@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.MyTheme">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                android:src="@drawable/yellow_background"/>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/kanit"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text=""/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</android.support.design.widget.CoordinatorLayout>

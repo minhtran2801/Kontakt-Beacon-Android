@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.minhtran.villagessydney.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="Search"
+        android:icon="@drawable/search_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="2"
+        android:title="@string/action_home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="3"
+        android:title="@string/action_login"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_register"
+        android:orderInCategory="4"
+        android:title="@string/action_register"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_update"
+        android:orderInCategory="5"
+        android:title="@string/action_update"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="6"
+        android:title="@string/action_logout"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>
